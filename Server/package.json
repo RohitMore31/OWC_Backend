@@ -14,8 +14,8 @@
   "main": "moongose .js",
   "type": "module",
   "scripts": {
-    "test": "jest --watchAll",
-    "start": "nodemon index.js"
+    "test": "",
+    "start": "index.js"
   },
   "keywords": [],
   "author": "",
