@@ -26,7 +26,6 @@ route.post('/Changepass', (req, res) => {
 //              providing link to mail which will be containt only 10 min
 //             const token = jwt.sign(email,signature,{expiresIn:"10m"});
             const token = jwt.sign(email,signature);
-            /* const link =`http://localhost:5000/Reset/viewnewpasspage/${token}` */
             const link =url.server+`/Reset/viewnewpasspage/${token}`
             const rt = sendmail(email,link);
             res.send("sucess");
